@@ -2,12 +2,12 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-enum Role {
+export enum Role {
   Student = "student",
   Admin = "admin"
 }
 
-interface IUser extends Document {
+export interface IUser extends Document {
   username: string;
   profileImage: string;
   email: string;
